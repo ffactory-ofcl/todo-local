@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    height: 95vh;
+    /* width: 95vw; */
+}
+
+div.content {
+    /* background-color: lavender; */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul#list {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+li.element {
+    list-style-type: none;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+span.element-label {
+    transition: color 0.8s;
+}
+
+span.element-label.checked {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.37);
+    transition: color 0.2s;
+}
+
+li.element {
+    padding: 0.25em 1.5em;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    width: 400px;
+    padding: 0.5em 0.5em;
+    transition: border 0.5s;
+}
+
+li.element:hover,
+li.element.checked:hover {
+    border-color: rgba(0, 0, 0, 0.45);
+    transition: border 0.2s;
+}
+
+li.element.checked {
+    color: rgba(0, 0, 0, 0.2);
+    /* color: red; */
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+h2#header-text {
+    font-size: 36px;
+}
+
+form#addnew-form {
+    margin-top: 1em;
+}
+
+
+i {
+    font-style: normal;
+    display: inline-block;
+    text-align: center;
+}
+
+i.fas.fa-trash {
+    margin-left: auto;
+    justify-self: flex-end;
+    width: 24px;
+    height: 24px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.5s;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+li.element.checked i.fas.fa-trash {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+i.fas.fa-trash:hover,
+li.element.checked i.fas.fa-trash:hover {
+    color: rgba(0, 0, 0, 0.85);
+    transition: color 0.2s;
+}
+
+
+i.check-button {
+    background: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: border 0.5s;
+    transition: color 0.5s;
+}
+
+i.check-button:hover {
+    color: rgba(0, 0, 0, 0.85);
+    transition: color 0.2s, border 0.2s;
+    border-color: hsla(192, 89%, 64%, 0.973);
+    background-color: hsla(192, 89%, 64%, 0.1);
+    /* transition: border 0.2s; */
+}
